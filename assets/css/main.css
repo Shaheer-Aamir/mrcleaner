@@ -16,16 +16,16 @@
 :root { 
   --background-color: #f9fafb; /* Background color for the entire website, including individual sections */
   --default-color: #333333; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #000; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #00285e; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #00285e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #333333;  /* The default color of the main navmenu links */
-  --nav-hover-color: #000; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #00285e;  /* The default color of the main navmenu links */
+  --nav-hover-color: #00285e; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #333333; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -147,7 +147,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #000;
+  background-color: #00285e;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -204,7 +204,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 100px;
+  max-height: 70px;
 }
 
 .header .logo h1 {
@@ -247,7 +247,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #000;
+    color: #00285e;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -480,7 +480,7 @@ h6 {
 
 /* Pill-shaped Get A Quote button – Desktop */
 .get-quote-btn {
-  background-color: #000;
+  background-color: #00285e;
   color: #fff;
   font-weight: 600;
   font-size: 15px;
@@ -525,7 +525,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #000;
+  background-color: #153564;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -828,7 +828,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/construction/wallpaperflare.com_wallpaper.jpg");
+  background-image: url("../img/construction/ade-cleaning-website.png");
   background-size: cover;
   background-position: center center;
   opacity: 1;
@@ -941,8 +941,8 @@ section,
 .hero .hero-buttons .btn-primary {
   display: inline-block;
   padding: 14px 32px;
-  background-color: #000;
-  color: var(--contrast-color);
+  background-color: #fff;
+  color: #00285e;
   border-radius: 4px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -950,9 +950,10 @@ section,
 }
 
 .hero .hero-buttons .btn-primary:hover {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #00285e;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }
 
 .hero .hero-buttons .btn-secondary {
@@ -2083,12 +2084,13 @@ section,
 
 .certifications .certification-grid .cert-card {
   background: var(--surface-color);
-  border-radius: 12px;
-  padding: 2rem;
+  border-radius: 16px;
   box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 90%);
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
   transition: all 0.4s ease;
   position: relative;
@@ -2118,19 +2120,15 @@ section,
 }
 
 .certifications .certification-grid .cert-card:hover .cert-icon img {
-  transform: scale(1.1);
+  /*transform: scale(1.1);*/
+  width: 100%;
 }
 
 .certifications .certification-grid .cert-card .cert-icon {
-  width: 70px;
-  height: 70px;
-  background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  border-radius: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 0.8rem;
 }
 
 .certifications .certification-grid .cert-card .cert-icon img {
@@ -2138,10 +2136,14 @@ section,
   max-height: 100%;
   object-fit: contain;
   transition: transform 0.4s ease;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
 }
 
 .certifications .certification-grid .cert-card .cert-details {
   flex: 1;
+  padding: 5px 20px;
 }
 
 .certifications .certification-grid .cert-card .cert-details h5 {
@@ -4998,3 +5000,5 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
