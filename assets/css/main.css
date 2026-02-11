@@ -16,16 +16,16 @@
 :root { 
   --background-color: #f9fafb; /* Background color for the entire website, including individual sections */
   --default-color: #333333; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #00285e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #00285e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #3d8f7c; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #3d8f7c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #00285e;  /* The default color of the main navmenu links */
-  --nav-hover-color: #00285e; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-color: #3d8f7c;  /* The default color of the main navmenu links */
+  --nav-hover-color: #3d8f7c; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #333333; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -147,7 +147,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: #00285e;
+  background-color: #3d8f7c;
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -247,7 +247,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: #00285e;
+    color: #3d8f7c;
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -480,7 +480,7 @@ h6 {
 
 /* Pill-shaped Get A Quote button – Desktop */
 .get-quote-btn {
-  background-color: #00285e;
+  background-color: #3d8f7c;
   color: #fff;
   font-weight: 600;
   font-size: 15px;
@@ -525,7 +525,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: #153564;
+  background-color: #3d8f7c;
   font-size: 14px;
   padding-bottom: 50px;
   position: relative;
@@ -828,7 +828,7 @@ section,
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/construction/ade-cleaning-website.png");
+  background-image: url("../img/construction/mrcleaner-cleaning-website (1).png");
   background-size: cover;
   background-position: center center;
   opacity: 1;
@@ -942,7 +942,7 @@ section,
   display: inline-block;
   padding: 14px 32px;
   background-color: #fff;
-  color: #00285e;
+  color: #3d8f7c;
   border-radius: 4px;
   font-weight: 600;
   transition: all 0.3s ease;
@@ -950,7 +950,7 @@ section,
 }
 
 .hero .hero-buttons .btn-primary:hover {
-  background-color: #00285e;
+  background-color: #3d8f7c;
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: #fff;
@@ -1316,8 +1316,12 @@ section,
   margin-bottom: 1.5rem;
   background-color: color-mix(in srgb, var(--heading-color), transparent 90%);
   transition: all 0.3s ease;
+  padding: 15px;
 }
-
+.services .service-card .service-icon img{
+  width: 100%;
+  height: 100%;
+}
 .services .service-card .service-icon i {
   font-size: 2rem;
   color: var(--accent-color);
